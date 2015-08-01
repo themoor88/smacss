@@ -1,0 +1,15 @@
+/* Layout */
+
+.siteheader {}
+.grid {}
+.featured {}
+
+.sidebar {}
+.footer {}
+.content {}
+
+.layout-constrained { width: 760px; }
+
+<div>
+  <div class="layout-constrained"></div>
+</div>
