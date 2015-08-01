@@ -1,0 +1,30 @@
+/* SMACSS Based Navigation */
+/* www.engadget.com */
+
+.nav {}
+.nav__dropdown { display: none; }
+.nav > li:hover > .nav__megadropdown { display: block; }
+.megadropdown {}
+
+.menu {}
+
+.modal__header {}
+.modal > header {}
+
+
+<ul class ="nav">
+  <li><a href=""</a>
+    <div class="nav__dropdown">
+      <div class="megadropdown"></div>
+    </div>
+  </li>
+  <li><a href=""</a></li>
+  <li><a href=""</a></li>
+  <li><a href=""</a>
+    <div class="nav__dropdown">
+      <ul class="menu">
+        <li><a></a></li>
+      </ul>
+    </div>
+  </li>
+</ul>
