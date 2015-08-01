@@ -1,2 +1,47 @@
 /* Templating */
 /* 5by5.tv */
+
+.show { display: inline-block; }
+
+getLatestEpisodes() {
+  items = [
+    {{show.img: "img.jpg", show.title:"my title!"}},
+    {{show.img: "img.jpg", show.title:"my title!"}},
+    {{show.img: "img.jpg", show.title:"my title!"}},
+    {{show.img: "img.jpg", show.title:"my title!"}},
+    {{show.img: "img.jpg", show.title:"my title!"}}
+  ]
+  render home.mu
+}
+
+/* show.mu */
+<div class="show"><a href=""><img src="{{ show.img }}">
+  {{#show.title}}<h3>Episode Title</h3>{{/show.title}}
+  </a>
+</div>
+
+/* home.mu */
+<div class="box">
+  <h2>New!</h2>
+<div class="box-body">
+{{#items}}
+{{>show}}
+{{/items}}
+</div>
+
+<div class="box-footer">
+  <a href="#">More New Episodes</a>
+</div>
+</div>
+
+<div class="layout-content">
+  <div class="box">
+    {{#items}}
+    {{>show}}
+    <div class="show"><a href =""><img src="{{show.img}}"></a>
+  </div>
+</div>
+
+{show.img: 'images/show2.jpg'}
+
+<img src="images/show.jpg">
