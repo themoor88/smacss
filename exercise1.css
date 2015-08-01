@@ -1,15 +1,17 @@
 /* Layout */
-
-.siteheader {}
-.grid {}
-.featured {}
-
-.sidebar {}
-.footer {}
-.content {}
-
+body { background-color: #333; }
+.layout-highlight { background-color: #CCC; }
+.layout-featured { background-color: #CCC; }
 .layout-constrained { width: 760px; }
+.layout-content {}
+.layout-sidebar {}
 
 <div>
   <div class="layout-constrained"></div>
+</div>
+<div clas="layout-highlight">
+  <div class="layout-constrained"></div>
+</div>
+<div>
+  <div class="layout-constrained">
 </div>
